@@ -1,0 +1,32 @@
+@import './base.css';
+
+#app{
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+/* Example Elements Using Gradients */
+.button-scissors {
+  background: var(--color-primary-scissors);
+  color: #fff;
+}
+
+.button-paper {
+  background: var(--color-primary-paper);
+  color: #fff;
+}
+
+.button-rock {
+  background: var(--color-primary-rock);
+  color: #fff;
+}
+
+.button-lizard {
+  background: var(--color-primary-lizard);
+  color: #fff;
+}
+
+.button-spock {
+  background: var(--color-primary-spock);
+  color: #fff;
+}
