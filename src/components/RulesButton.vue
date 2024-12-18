@@ -24,6 +24,6 @@
 	#rules-button p {
 		color: white;
 		font-size: medium;
-		font-weight: 600;
+		font-weight: 500;
 	}
 </style>
