@@ -30,3 +30,52 @@
   background: var(--color-primary-spock);
   color: #fff;
 }
+
+.piece-outline-inital {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 0px -8px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	height: 6rem;
+	width: 6rem;
+}
+
+.piece-bg-initial {
+	display: flex;
+	box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.3);
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 50%;
+	height: 4rem;
+	width: 4rem;
+}
+
+.piece-icon {
+	height: 50%;
+	width: 50%;
+}
+
+@media (min-width: 600px) { 
+	.piece-outline-inital {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: inset 0px -8px 4px rgba(0, 0, 0, 0.3);
+		border-radius: 50%;
+		height: 8rem;
+		width: 8rem;
+	}
+
+	.piece-bg-initial {
+		display: flex;
+		box-shadow: inset 0px 6px 4px rgba(0, 0, 0, 0.3);
+		align-items: center;
+		justify-content: center;
+		background-color: white;
+		border-radius: 50%;
+		height: 6rem;
+		width: 6rem;
+	}
+}

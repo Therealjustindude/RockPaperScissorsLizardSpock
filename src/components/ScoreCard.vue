@@ -12,7 +12,7 @@
 #score-card {
   background-color: white;
   border-radius: 10px;
-  width: 5rem;
+  width: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

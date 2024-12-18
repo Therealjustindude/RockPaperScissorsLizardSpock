@@ -1,25 +1,30 @@
 <script setup lang="ts">
-  import HelloWorld from './components/HelloWorld.vue'
-  import RulesButton from './components/RulesButton.vue';
-import ScoreCard from './components/ScoreCard.vue';
+import GameHeader from './components/GameHeader.vue'; 
+import RulesButton from './components/RulesButton.vue';
+import GameBoard from './components/GameBoard.vue';
 </script>
 
 <template>
-  <header>
-    <div id="game-header">
-      <img alt="Game logo" id="logo" src="@/assets/logo-bonus.svg" />
-      <ScoreCard />
-    </div>
-  </header>
-  <main>
-    <HelloWorld msg="You did it!" />
-  </main>
-  <footer>
-    <RulesButton />
-  </footer>
+  <div id="layout">
+    <header>
+      <GameHeader />
+    </header>
+    <main>
+      <GameBoard/>
+    </main>
+    <footer>
+      <RulesButton />
+    </footer>
+  </div>
 </template>
 
 <style scoped>
+#layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  min-width: 100vw; /* Full viewport height */
+}
 header {
   display: flex;
   justify-content: center;
@@ -28,34 +33,16 @@ header {
   padding: 32px;
 }
 
-#logo {
-  width: 80px; 
-  height: 80px;
-}
-
-#game-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 4px solid var(--color-neutral-header-outline);
-  border-radius: 10px;
-  width: 90%;
-  padding: 8px 16px;
-}
-
 main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
   display: flex;
+  flex: 1;
+  width: 100%;
+  height:100%;
   align-items: center;
   justify-content: center;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -88,8 +75,6 @@ footer {
   }
 
   footer {
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: flex-end;
     width: 100%;
